@@ -52,4 +52,3 @@ Set these environment variables in Render:
 ## Forking
 
 After pushing this folder to GitHub, another person can fork it, set the environment variables, install dependencies, and run the bot without editing secrets into the source code.
-# amir.for.bot

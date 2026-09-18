@@ -68,7 +68,7 @@ from aiogram.types import (
 # توسط رئیس (SUPER_ADMIN_ID) مدیریت می‌شوند.
 # ============================================================
 
-BOT_TOKEN = os.getenv("BOT_TOKEN", "8620450006:AAEhhZ68ZN5ebE4mCnd0mxRRFv_litzjifk").strip()
+BOT_TOKEN = os.getenv("BOT_TOKEN", "").strip()
 
 REQUIRED_CHANNEL = os.getenv("REQUIRED_CHANNEL", "@spayder_man_vpn").strip()
 CHANNEL_LINK = os.getenv("CHANNEL_LINK", "https://t.me/spayder_man_vpn").strip()
@@ -76,7 +76,7 @@ CHANNEL_LINK = os.getenv("CHANNEL_LINK", "https://t.me/spayder_man_vpn").strip()
 # فقط رئیس اصلی - دسترسی کامل و بدون قید و شرط به همه بخش‌ها.
 # این تنها آیدی است که همچنان به‌صورت ثابت در کد باقی می‌ماند،
 # چون رئیس اصلی نمی‌تواند از طریق پنل خودش را حذف کند.
-SUPER_ADMIN_ID = "7237811387"
+SUPER_ADMIN_ID = int(os.getenv("SUPER_ADMIN_ID", "0") or "0")
 
 # دیتابیس
 DATABASE = "config_shop.db"
