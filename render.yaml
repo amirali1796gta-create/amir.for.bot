@@ -1,0 +1,17 @@
+services:
+  - type: worker
+    name: telegram-config-bot
+    runtime: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: python bot.py
+    envVars:
+      - key: BOT_TOKEN
+        sync: false
+      - key: SUPER_ADMIN_ID
+        sync: false
+      - key: REQUIRED_CHANNEL
+        value: '@spayder_man_vpn'
+      - key: CHANNEL_LINK
+        value: 'https://t.me/spayder_man_vpn'
+      - key: PROXY_URL
+        value: ''
